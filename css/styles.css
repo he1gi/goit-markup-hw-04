@@ -15,6 +15,7 @@
    --border-for-header: rgba(236, 236, 236, 1);
    --button-active-color: rgba(245, 244, 250, 1);
    --color-for-team-cards: rgba(255, 255, 255, 1);
+   --gradient-color: rgba(47, 48, 58, 0.4) 35%;
 }
 
 /* list */
@@ -159,11 +160,20 @@ h1, h2, h3, p, ul {
 
 /* секция героя с кнопкой */
 .hero {
-    background-color: var(--background-hero);
+    max-width: 1600px;
+        height: 600px;
+        margin: auto;  
+        background-image: linear-gradient(to right,
+            var(--gradient-color),
+            var(--gradient-color)),
+            url(../images/background-image.jpg
+            );
     text-align: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
-
+      
 .hero.section {
     padding: 200px 0;
 }
