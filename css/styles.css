@@ -107,7 +107,7 @@ h1, h2, h3, p, ul {
 } 
 
 .site-nav .link {
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -136,11 +136,13 @@ h1, h2, h3, p, ul {
 }
 
 .auth-nav .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .auth-nav .link {
-    display: block;
+    display: flex;
+    align-items: center;
+    
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -157,20 +159,65 @@ h1, h2, h3, p, ul {
     color: var(--accent-color);
 }
 
+.icon-envelope {
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+.icon-smartphone {
+    margin-right: 10px;
+
+    fill: currentColor;
+}
+
+/* .auth-nav-icon-envelope {
+    display: flex;
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+} */
+
+
+
+
+/* .smartphone::before {
+    content: "";
+    outline: 1px solid tomato;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+/* .envelope::before {
+    content: "";
+    outline: 1px solid tomato;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+
+} */
 
 /* секция героя с кнопкой */
 .hero {
     max-width: 1600px;
-        height: 600px;
-        margin: auto;  
-        background-image: linear-gradient(to right,
-            var(--gradient-color),
-            var(--gradient-color)),
-            url(../images/background-image.jpg
-            );
+    height: 600px;
+    margin: auto;  
+
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
+
+    background-color: var(--background-hero);   
+    background-image: linear-gradient(to right,
+        var(--gradient-color),
+        var(--gradient-color)),
+        url(../images/background-image.jpg
+        );
     
 }
       
@@ -251,6 +298,27 @@ h1, h2, h3, p, ul {
     letter-spacing: 0.03em;
 }
 
+
+
+.list .details-icon::before {
+
+}
+
+.list .punctuality-icon::before {
+
+}
+
+.list .planning-icon::before {
+
+}
+
+.list .technology-icon::before {
+
+}
+
+/* или через :nth-child(1) (2)...(4) */
+
+/* или задать на item::before размеры и все необходимое и псевдоэлеманты отдельно на классы */
 
  /* чем мы занимаемся */
 .activity .picture {
