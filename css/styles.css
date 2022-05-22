@@ -159,13 +159,13 @@ h1, h2, h3, p, ul {
     color: var(--accent-color);
 }
 
-.icon-envelope {
+.auth-nav .icon-envelope {
     margin-right: 10px;
 
     fill: currentColor;
 }
 
-.icon-smartphone {
+.auth-nav .icon-smartphone {
     margin-right: 10px;
 
     fill: currentColor;
