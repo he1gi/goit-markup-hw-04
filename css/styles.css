@@ -406,9 +406,6 @@ h1, h2, h3, p, ul {
 
 .team-icon {
     fill: currentColor;
-
-    justify-content: center;
-    align-items: center;
 }
 
 .team-link:hover,
@@ -453,8 +450,6 @@ h1, h2, h3, p, ul {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: var(--icon-color);
-    text-decoration: none;
-
 }
 
 .clients .clients-link:hover,
@@ -467,7 +462,7 @@ h1, h2, h3, p, ul {
     fill: currentColor;
 }
 
-/* подвал */
+/* футер */
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -536,7 +531,6 @@ h1, h2, h3, p, ul {
 
 .social-list {
     display: flex;
-    margin-right: 10px;
 }
 
 .social-item:not(:last-child) {
